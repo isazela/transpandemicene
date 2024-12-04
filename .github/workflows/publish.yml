@@ -15,3 +15,11 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: www
+      - uses: logseq/publish-spa@main
+        with:
+          graph-directory: transpandemicene
+          output-directory: out
+          version: nightly
+          theme-mode: dark
+          accent-color: teal
+      
